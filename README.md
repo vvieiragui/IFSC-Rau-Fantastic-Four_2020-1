@@ -30,7 +30,7 @@ Conta com a colaboração dos professores:
 
 - Copiar o diretório "Projeto Exemplo", renomeando ela para o título do seu projeto.
 - Adicionar ao README.md os dados do seu projeto (título, resumo, objetivos);
-- Adicionar os códigos fontes, e o script para inicializar o bando de dados e possíveis scripts de instalação de dependências, dentro da pasta Fontes;
+- Adicionar os códigos fontes, e o script para inicializar o banco de dados e possíveis scripts de instalação de dependências, dentro da pasta Fontes;
 - Adicionar em "Documentos" a documentação do sistema assim como o manual para instalação do mesmo;
 - Adicione o link do seu projeto no README.md inicial.
 
@@ -42,7 +42,7 @@ Conta com a colaboração dos professores:
   ├─ Manual_Instalação.odt
  ┊
  └┬ Fontes
-  ├─ Script_instalação_Bando_de_Dados.txt
+  ├─ Script_instalação_Banco_de_Dados.txt
   ├─ Dependências.txt
   └┬ Fontes
    └─ index.py
