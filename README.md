@@ -23,15 +23,16 @@ Conta com a colaboração dos professores:
 - Marco Antonio Torrez Rojas
 
 ## Projetos de 2020-1
-- [Calendario Unificado IFSC](https://github.com/ifsc-rau/2019-1/tree/master/Calendario%20Unificado%20IFSC)
-- [Tech Travel Brazil](https://github.com/ifsc-rau/2019-1/tree/master/Tech%20Travel%20Brazil)
+- [Projeto Exemplo](https://github.com/ifsc-rau/IFSC-Rau-Fantastic-Four_2020-1/tree/master/Projeto%20Exemplo)
+
 
 ## Instruções
 
 - Copiar o diretório "Projeto Exemplo", renomeando ela para o título do seu projeto.
 - Adicionar ao README.md os dados do seu projeto (título, resumo, objetivos);
-- Adicionar os códigos fontes, e o script para inicializar o bando de dados e possíveis scripts de instalação de dependências, dentro da pasta Fontees.
-- Adicionar em "Documentos" a documentação do sistema assim como o manual para instalação do mesmo.
+- Adicionar os códigos fontes, e o script para inicializar o bando de dados e possíveis scripts de instalação de dependências, dentro da pasta Fontes;
+- Adicionar em "Documentos" a documentação do sistema assim como o manual para instalação do mesmo;
+- Adicione o link do seu projeto no README.md inicial.
 
 ```
 ─┬ Projeto Exemplo
