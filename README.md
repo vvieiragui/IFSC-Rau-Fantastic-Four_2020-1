@@ -1,6 +1,6 @@
 <p>
-    <img src="" height="150" width="175" alt="IFSC-Rau" />
-    <img src="" height="150" width="175" alt="Foguete" />
+    <img src="https://github.com/ifsc-rau/IFSC-Rau-Fantastic-Four_2020-1/blob/master/images/ifsc-rau.png" height="150" width="175" alt="IFSC-Rau" />
+    <img src="https://github.com/ifsc-rau/IFSC-Rau-Fantastic-Four_2020-1/blob/master/images/foguete.png" height="150" width="175" alt="Foguete" />
 </p>
 
 <h3 align="center">
@@ -15,13 +15,13 @@ Repositório criado para com o intuito de estimular o uso do git nos projetos in
 
 Conta com a colaboração dos professores:
 
-- **Alexandre Altair de Melo
-- **Bruno Crestani Calegaro
-- **Davi Bernardo Silva
-- **Edilson Hipolito da Silva
-- **Frank Juergen Knaesel
-- **Marco Antonio Torrez Rojas
+- Alexandre Altair de Melo
+- Bruno Crestani Calegaro
+- Davi Bernardo Silva
+- Edilson Hipolito da Silva
+- Frank Juergen Knaesel
+- Marco Antonio Torrez Rojas
 
 ## Projetos de 2020-1
-- **[Calendario Unificado IFSC](https://github.com/ifsc-rau/2019-1/tree/master/Calendario%20Unificado%20IFSC)
-- **[Tech Travel Brazil](https://github.com/ifsc-rau/2019-1/tree/master/Tech%20Travel%20Brazil)
+- [Calendario Unificado IFSC](https://github.com/ifsc-rau/2019-1/tree/master/Calendario%20Unificado%20IFSC)
+- [Tech Travel Brazil](https://github.com/ifsc-rau/2019-1/tree/master/Tech%20Travel%20Brazil)
