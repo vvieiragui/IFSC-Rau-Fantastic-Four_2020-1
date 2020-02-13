@@ -1,6 +1,6 @@
-<p>
-    <img src="https://github.com/ifsc-rau/IFSC-Rau-Fantastic-Four_2020-1/blob/master/images/ifsc-rau.png" height="150" width="175" alt="IFSC-Rau" />
-    <img src="https://github.com/ifsc-rau/IFSC-Rau-Fantastic-Four_2020-1/blob/master/images/foguete.png" height="150" width="175" alt="Foguete" />
+<p align="center">
+    <img src="https://github.com/ifsc-rau/IFSC-Rau-Fantastic-Four_2020-1/blob/master/images/ifsc-rau.png" height="200" width="225" alt="IFSC-Rau" />
+    <img src="https://github.com/ifsc-rau/IFSC-Rau-Fantastic-Four_2020-1/blob/master/images/foguete.png" height="200" width="225" alt="Foguete" />
 </p>
 
 <h3 align="center">
