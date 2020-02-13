@@ -12,6 +12,5 @@ Conta com a colaboração dos professores:
 - Marco Antonio Torrez Rojas
 
 ## Projetos de 2020-1
-- [Bebedouro Automático para cãe e gatos](https://github.com/ifsc-rau/2019-1/tree/master/Bebedouro%20Autom%C3%A1tico%20para%20c%C3%A3e%20e%20gatos)
 - [Calendario Unificado IFSC](https://github.com/ifsc-rau/2019-1/tree/master/Calendario%20Unificado%20IFSC)
 - [Tech Travel Brazil](https://github.com/ifsc-rau/2019-1/tree/master/Tech%20Travel%20Brazil)
