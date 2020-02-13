@@ -4,7 +4,7 @@
 </p>
 
 <h3 align="center">
-    Projetos Integradores 2020-1 IFSC Jaraguá do Sul - Rau
+    Projetos Integradores 2020-1 
     <br />
     Deixe sua imaginação voar, um jeito divertido de colocar em prática seus conhecimentos. 🚀
 </h3>
