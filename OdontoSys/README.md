@@ -17,7 +17,21 @@ sistema pode ser usado por clínicas em geral que usam uma agenda com cadastros.
 
 ## Objetivo
 
-Objetivos do projeto.
+ Objetivo Geral
+ 
+Desenvolver um sistema web para auxiliar as clínicas odontológicas, de modo
+a melhorar o atendimento.
+
+Objetivos Específicos
+
+• Realizar levantamento de  sistemas similares já prontos e analisar pontos
+positivos e negativos;
+• Buscar um diferencial em comparação a outros sistemas;
+• Levantar ideias para a criação do sistema;
+• Projetar e analisar o sistema para atender os objetivos requeridos;
+• Pôr em execução o desenvolvimento do sistema web;
+• Testar o sistema  web  com simulação de um evento real em consultório
+odontológico.
 
 ## Colabore
 
