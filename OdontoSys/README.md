@@ -1,9 +1,9 @@
-# Título do Projeto - IFSC-RAU Projeto Integrador 2020-1
+#OdontoSys - Sistema para gestão de clinicas
 
 ## Resumo
 
 Breve resumo sobre o seu projeto.
-O texto encontra-se no documento do projeto integrador 1.
+
 
 
 ## Objetivo
