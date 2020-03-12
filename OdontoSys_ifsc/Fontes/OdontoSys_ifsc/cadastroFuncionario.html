@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>OdontoSys | Cadastro Funcionário</title>
+  <link rel="icon" href="./dist/img/perfilOdonto-com-fundo.jpg">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index.html" class="nav-link">Página Inicial</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="suporteTecnico.html" class="nav-link">Contato Suporte</a>
+      </li>
+    </ul>
+
+    <!-- Link usuario lado direito-->
+    <ul class="navbar-nav ml-auto">
+      <!-- Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <div class="user-panel d-flex">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+              <ul class="nav-item has-treeview">
+                <a href="#" class="nav-link">
+                  <p>
+                    Usuário
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="login.php" class="nav-link active">
+                      <i class="fas fa-sign-out-alt nav-icon"></i>
+                      <p>Sair</p>
+                    </a>
+                  </li>
+                </ul>
+            </ul>              
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Logo -->
+    <a href="#" class="brand-link">
+      <img src="dist/img/perfilOdonto.png" alt="OdontoSys Logo" class="brand-image img-circle elevation-3"
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">OdontoSys</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-users"></i>
+              <p>
+                Cadastro de Usuários
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="cadastroDentista.html" class="nav-link active">
+                  <i class="fas fa-user-md"></i>
+                  <p>Cadastro de Dentista</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="cadastroFuncionario.html" class="nav-link active">
+                  <i class="fas fa-user-nurse"></i>
+                  <p>Cadastro de Funcionário</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="cadastroPaciente.html" class="nav-link active">
+                  <i class="fas fa-user-injured"></i>
+                  <p>Cadastro de Paciente</p>
+                </a>
+              </li>
+            </ul>
+            <li class="nav-header">Agenda | Prontuário</li>
+            <li class="nav-item">
+              <a href="calendar.html" class="nav-link">
+                <i class="nav-icon far fa-calendar-alt"></i>
+                <p>
+                  Agenda
+                  <span class="badge badge-info right"></span><!--Notificação -->
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-folder-open"></i>
+                <p>
+                  Prontuário
+                </p>
+              </a>
+            </li>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-8">
+            <h1 class="m-0 text-dark"><b> Cadastro de Usuários - Funcionário</b></h1>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Inicio formulario -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                  <div class="card card-primary">
+                        <div class="card-header">
+                          <h3 class="card-title">Dados Pessoais</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <!-- inicio form -->
+                        <form role="form">
+                          <div class="card-body">
+                            <div class="form-group">
+                              <label for="nomeUsuario">Nome Completo</label>
+                              <input type="text" class="form-control" id="nomeUsuario" placeholder="Nome">
+                            </div>
+                            <div class="form-group">  
+                                <label for="cpf">CPF</label>
+                                <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00">
+                            </div>
+                            <div class="form-group">  
+                                <label for="dNasc">Data de Nascimento</label>
+                                <input type="date" class="form-control" id="dNasc">
+                            </div>
+                          </div>
+                          <!-- /.card-body -->
+                        </form><!-- fim form -->
+                    </div>
+
+                    <div class="card card-primary">
+                      <div class="card-header">
+                        <h3 class="card-title">Endereço</h3>
+                      </div>
+                      <form role="form">
+                        <div class="card-body">
+                          <div class="form-group">
+                             <select>
+                            <option selected="" value="">
+                                Selecione o Estado 
+                            </option>
+                                <option value="Acre">Acre</option>
+                                <option value="Alagoas">Alagoas</option>
+                                <option value="Amapá">Amapá</option>
+                                <option value="Amazonas">Amazonas</option>
+                                <option value="Bahia">Bahia</option>
+                                <option value="Ceará">Ceará</option>
+                                <option value="Distrito Federal">Distrito Federal</option>
+                                <option value="Espírito Santo">Espírito Santo</option>
+                                <option value="Goiás">Goiás</option>
+                                <option value="Maranhão">Maranhão</option>
+                                <option value="Mato Grosso">Mato Grosso</option>
+                                <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                                <option value="Minas Gerais">Minas Gerais</option>
+                                <option value="Pará">Pará</option>
+                                <option value="Paraíba">Paraíba</option>
+                                <option value="Paraná">Paraná</option>
+                                <option value="Pernambuco">Pernambuco</option>
+                                <option value="Piauí">Piauí</option>
+                                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                                <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                                <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                                <option value="Rondônia">Rondônia</option>
+                                <option value="Roraima">Roraima</option>
+                                <option value="Santa Catarina">Santa Catarina</option>
+                                <option value="São Paulo">São Paulo</option>
+                                <option value="Sergipe">Sergipe</option>
+                                <option value="Tocantins">Tocantins</option>
+                        </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" class="form-control" id="cidade" placeholder="00000-000">
+                          </div>
+                          <div class="form-group">
+                            <label for="cep">CEP</label>
+                            <input type="text" class="form-control" id="cep" placeholder="00000-000">
+                          </div>
+                          <div class="form-group">
+                            <label for="bairro">Bairro</label>
+                            <input type="text" class="form-control" id="bairro">
+                          </div>
+                          <div class="form-group">
+                            <label for="rua">Rua</label>
+                            <input type="text" class="form-control" id="rua">
+                          </div>
+                          <div class="form-group">
+                            <label for="numeroCasa">Número</label>
+                            <input type="text" class="form-control" id="numeroCasa">
+                          </div>
+                          <div class="form-group">
+                            <label for="complemento">Complemento</label>
+                            <input type="text" class="form-control" id="complemento">
+                          </div>
+
+                        </div>
+                      </form>
+                    </div>
+
+                    <div class="card card-primary">
+                        <div class="card-header">
+                          <h3 class="card-title">Contato</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <!-- inicio form -->
+                        <form role="form">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" id="contato1" placeholder="(00)00000-0000">
+                                    </div> 
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" id="contato2" placeholder="(00)00000-0000" >
+                                    </div>
+                                </div>
+                                <div class="form-group">  
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                        <input type="text" class="form-control" id="emailContato" placeholder="exemplo@exemplo.com.br">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- /.card-body -->
+                        </form><!-- fim form -->
+                    </div>
+                    
+                     <!-- Inicio observações - textArea -->
+                      <div class="card card-primary">
+                        <div class="card-header">
+                          <h3 class="card-title">
+                            Observação</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body pad">
+                          <div class="mb-3">
+                            <textarea class="textarea" placeholder="Observações"
+                              style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                          </div>
+                          <p class="text-sm mb-0">
+                            Documente as informações necessárias sobre o cadastro.
+                          </p>
+                        </div> 
+                      </div>
+ 
+                    <div class="card-footer" style="margin-left: 80%;">
+                      <button type="submit" class="btn btn-primary">Registrar</button>
+                    </div>
+              </div>
+        </div>
+
+    </section>
+    <!-- /.Fim Formulario --> 
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 0.0.1
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2019-2020 <a>OdontoSys</a>.</strong> All rights reserved.
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+</body>
+</html>
