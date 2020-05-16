@@ -1,57 +1,3 @@
-<?php
-// Conexão
-require_once 'conexao.php';
-
-// Sessão
-session_start();
-
-// Botão enviar
-if(isset($_POST['btn-entrar'])):
-	$erros = array();
-	$login = mysqli_escape_string($connect, $_POST['login']);
-	$senha = mysqli_escape_string($connect, $_POST['senha']);
-
-	if(isset($_POST['lembrar-senha'])):
-
-		setcookie('login', $login, time()+3600);
-		setcookie('senha', md5($senha), time()+3600);
-	endif;
-
-	if(empty($login) or empty($senha)):
-		$erros[] = "<li> O campo login/senha precisa ser preenchido </li>";
-	else:
-		// 105 OR 1=1 
-	    // 1; DROP TABLE teste
-
-		$sql = "SELECT login FROM usuarios WHERE login = '$login'";
-		$resultado = mysqli_query($connect, $sql);		
-
-		if(mysqli_num_rows($resultado) > 0):
-		$senha = md5($senha);       
-		$sql = "SELECT * FROM usuarios WHERE login = '$login' AND senha = '$senha'";
-
-
-
-		$resultado = mysqli_query($connect, $sql);
-
-			if(mysqli_num_rows($resultado) == 1):
-				$dados = mysqli_fetch_array($resultado);
-				mysqli_close($connect);
-				$_SESSION['logado'] = true;
-				$_SESSION['id_usuario'] = $dados['id'];
-				header('Location: home.php');
-			else:
-				$erros[] = "<li> Usuário e senha não conferem </li>";
-			endif;
-
-		else:
-			$erros[] = "<li> Usuário inexistente </li>";
-		endif;
-
-	endif;
-
-endif;
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -79,22 +25,15 @@ endif;
     <a href="#"><b>OdontoSys</b></a>
   </div>
   <!-- /.login-logo -->
-  <?php
-  if(!empty($erros)):
-	foreach($erros as $erro):
-		echo $erro;
-	endforeach;
-endif;
-?>
-
+ 
   <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">
       <p class="login-box-msg">Faça o login para iniciar a sessão</p>
 
-      <form method="post">
+      <form method="post" action="conexao.php">
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email">
+          <input type="text" class="form-control" name="login" id="login" placeholder="Login">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -102,7 +41,7 @@ endif;
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Senha">
+          <input type="password" class="form-control" name="senha" id="senha" placeholder="Senha">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -117,11 +56,6 @@ endif;
                 <button  type="submit" class="btn btn-primary">Acessar</button>
               </div>
             </th>
-            <th>
-              <div class="col-9" style="margin-left: 90px;">
-                <button type="submit" class="btn btn-danger"><a style="color: #fff;" href="registrar_user.html">Cadastre-se</a></button>     
-              </div>
-            </th>
           </tr>  
           </table>
              
@@ -132,11 +66,11 @@ endif;
 <!-- /.login-box -->
 
 <!-- jQuery -->
-<script src="../../plugins/jquery/jquery.min.js"></script>
+<script src="plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
-<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
-<script src="../../dist/js/adminlte.min.js"></script>
+<script src="dist/js/adminlte.min.js"></script>
 
 </body>
 </html>
